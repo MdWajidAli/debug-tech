@@ -1,6 +1,7 @@
 {
-  "/page": "app/page.js",
+  "/about-us/page": "app/about-us/page.js",
+  "/services/page": "app/services/page.js",
+  "/internships/page": "app/internships/page.js",
   "/learning-path/page": "app/learning-path/page.js",
-  "/learning-path/fullstack/page": "app/learning-path/fullstack/page.js",
-  "/about-us/page": "app/about-us/page.js"
+  "/courses/page": "app/courses/page.js"
 }
