@@ -11,9 +11,11 @@ import {
   Cloud,
   Settings,
   Code,
-  LucideIcon,
-  ArrowLeft
+  LucideIcon
+  // ArrowLeft
 } from "lucide-react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 interface LearningPath {
   title: string;
@@ -83,14 +85,15 @@ export default function LearningPaths() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+      <Header />
       <div className="container mx-auto px-4 py-16">
-        <Link
+        {/* <Link
           href="/"
           className="inline-flex items-center text-yellow-600 dark:text-yellow-400 hover:underline transition-colors mb-8"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Home
-        </Link>
+        </Link> */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -151,6 +154,7 @@ export default function LearningPaths() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

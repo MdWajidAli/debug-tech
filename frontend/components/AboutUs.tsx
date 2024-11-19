@@ -113,10 +113,11 @@ export default function AboutUs() {
           <div className="flex flex-col items-center">
             {[
               { name: "Masood quraishi", role: "CEO" },
-              { name: "Nawaz quraishi", role: "Director" },
-              { name: "Altaf Ali", role: "Manager" },
-              { name: "Muhammed Wajid Ali", role: "Team Lead" },
-              { name: "Mohammad Dariya begum", role: "UI/UX Designer" },
+              { name: "Nawaz quraishi", role: "Director of Operations" },
+              { name: "Md Shabaz", role: "Director of Strategic Programs" },
+              { name: "Altaf Ali", role: "Chief Operations Supervisor" },
+              { name: "Md Wajid Ali", role: "Director of Engineering" },
+              { name: "Mohammad Dariya begum", role: "Head of Design and UX" },
             ].map((member, index) => (
               <div
                 key={index}
@@ -126,7 +127,7 @@ export default function AboutUs() {
                 <p>{member.role}</p>
               </div>
             ))}
-            <div className="flex flex-wrap justify-center gap-4 mt-4">
+            {/* <div className="flex flex-wrap justify-center gap-4 mt-4">
               {Array(5)
                 .fill("User Developer")
                 .map((role, index) => (
@@ -137,7 +138,7 @@ export default function AboutUs() {
                     <p>{role}</p>
                   </div>
                 ))}
-            </div>
+            </div> */}
           </div>
         </section>
       </main>

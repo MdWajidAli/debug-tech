@@ -9,8 +9,8 @@ import ThemeImage from "./ThemeImage";
 const navItems = [
   { name: "Internships", href: "internships" },
   { name: "Learning Paths", href: "learning-path" },
-  { name: "Courses", href: "#" },
-  { name: "Services", href: "#" },
+  { name: "Courses", href: "courses" },
+  { name: "Services", href: "services" },
   // { name: "Home", href: "/" },
 ];
 
