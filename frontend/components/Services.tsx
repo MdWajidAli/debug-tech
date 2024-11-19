@@ -5,9 +5,7 @@ import Link from "next/link";
 // import { useTheme } from "next-themes";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import Header from "./Header";
-import Footer from "./Footer";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 const services = [
   {
@@ -42,7 +40,6 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
-      <Header />
       <main className="container mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -94,7 +91,7 @@ export default function Services() {
           ))}
         </div>
 
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -107,10 +104,10 @@ export default function Services() {
             Scroll to learn more
             <ChevronDown className="ml-2 h-5 w-5 animate-bounce" />
           </Link>
-        </motion.div> */}
+        </motion.div>
       </main>
 
-      {/* <footer id="footer" className="bg-white dark:bg-gray-800 py-12">
+      <footer id="footer" className="bg-white dark:bg-gray-800 py-12">
         <div className="container mx-auto px-4 text-center">
           <p className="text-xl font-semibold mb-4">
             Ready to transform your business?
@@ -125,8 +122,7 @@ export default function Services() {
             &copy; 2024 DEBUG-TECH. All rights reserved.
           </p>
         </div>
-      </footer> */}
-      <Footer />
+      </footer>
     </div>
   );
 }
