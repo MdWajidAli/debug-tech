@@ -33,7 +33,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="#"
+                  href="about-us"
                   className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300"
                 >
                   About us

@@ -7,8 +7,8 @@ import { Sun, Moon, Menu, X, User } from "lucide-react";
 import ThemeImage from "./ThemeImage";
 
 const navItems = [
-  { name: "Internships", href: "#" },
-  { name: "Learning Paths", href: "#" },
+  { name: "Internships", href: "internships" },
+  { name: "Learning Paths", href: "learning-path" },
   { name: "Courses", href: "#" },
   { name: "Services", href: "#" },
   // { name: "Home", href: "/" },
