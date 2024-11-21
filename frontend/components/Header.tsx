@@ -3,21 +3,22 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import { usePathname } from "next/navigation";
 import { Sun, Moon, Menu, X, User } from "lucide-react";
 import ThemeImage from "./ThemeImage";
 
 const navItems = [
-  { name: "Internships", href: "internships" },
-  { name: "Learning Paths", href: "learning-path" },
-  { name: "Courses", href: "courses" },
-  { name: "Services", href: "services" },
-  // { name: "Home", href: "/" },
+  { name: "Internships", href: "/internships" },
+  { name: "Learning Paths", href: "/learning-path" },
+  { name: "Courses", href: "/courses" },
+  { name: "Services", href: "/services" },
 ];
 
 export default function Header() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     setMounted(true);
@@ -50,7 +51,11 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300"
+              className={`transition-colors duration-300 ${
+                pathname === item.href
+                  ? "text-yellow-600 dark:text-yellow-400 font-semibold"
+                  : "hover:text-yellow-600 dark:hover:text-yellow-400"
+              }`}
             >
               {item.name}
             </Link>
@@ -93,7 +98,11 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+              className={`block px-4 py-2 ${
+                pathname === item.href
+                  ? "bg-gray-100 dark:bg-gray-700 text-yellow-600 dark:text-yellow-400 font-semibold"
+                  : "hover:bg-gray-100 dark:hover:bg-gray-700"
+              }`}
               onClick={toggleMobileMenu}
             >
               {item.name}
