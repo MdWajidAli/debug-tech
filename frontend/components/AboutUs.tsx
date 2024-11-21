@@ -20,6 +20,15 @@ export default function AboutUs() {
   const [mounted, setMounted] = useState(false);
   // const { theme } = useTheme();
 
+  const teamMembers = [
+    { name: "Masood Quraishi", role: "CEO" },
+    { name: "Nawaz Quraishi", role: "Director of Operations" },
+    { name: "Md Shabaz", role: "Director of Strategic Programs" },
+    { name: "Altaf Ali", role: "Chief Operations Supervisor" },
+    { name: "Md Wajid Ali", role: "Director of Engineering" },
+    { name: "Mohammad Dariya Begum", role: "Head of Design and UX" },
+  ];
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -61,16 +70,16 @@ export default function AboutUs() {
               <p className="mb-4">
                 And now, in 2024, after years of anticipation, Debug Tech is
                 back—stronger, more dynamic, and brimming with new joy, energy,
-                and knowledge. This is not just a relaunch; it iss a rebirth. The
-                institute has evolved to meet the demands of a new era,
+                and knowledge. This is not just a relaunch; it iss a rebirth.
+                The institute has evolved to meet the demands of a new era,
                 embracing advancements in AI, machine learning, cloud computing,
                 and cybersecurity, all while staying true to its core values of
                 nurturing talent and fostering innovation.
               </p>
               <p className="font-bold">
-                Debug Techs legacy continues, and its future looks brighter
-                than ever. The institution that once stood as a beacon of hope
-                is now back, ready to shape the tech leaders of tomorrow.
+                Debug Techs legacy continues, and its future looks brighter than
+                ever. The institution that once stood as a beacon of hope is now
+                back, ready to shape the tech leaders of tomorrow.
               </p>
             </div>
             <div className="md:w-1/3">
@@ -113,24 +122,43 @@ export default function AboutUs() {
           <h2 className="text-3xl font-bold mb-8 text-center">
             Meet Our Team of DebugTech
           </h2>
-          <div className="flex flex-col items-center">
-            {[
-              { name: "Masood quraishi", role: "CEO" },
-              { name: "Nawaz quraishi", role: "Director of Operations" },
-              { name: "Md Shabaz", role: "Director of Strategic Programs" },
-              { name: "Altaf Ali", role: "Chief Operations Supervisor" },
-              { name: "Md Wajid Ali", role: "Director of Engineering" },
-              { name: "Mohammad Dariya begum", role: "Head of Design and UX" },
-            ].map((member, index) => (
-              <div
-                key={index}
-                className="bg-yellow-500 text-white p-4 rounded-lg mb-4 w-64 text-center"
-              >
-                <h3 className="font-bold">{member.name}</h3>
-                <p>{member.role}</p>
+
+          <div className="min-h-screen bg-gray-900 text-white py-16">
+            <h2 className="text-3xl font-bold text-center mb-12">
+              Meet Our Team of DebugTech
+            </h2>
+            <div className="flex flex-col items-center space-y-4">
+              <div className="bg-yellow-500 text-white p-4 rounded-lg w-64 text-center">
+                <h3 className="font-bold">{teamMembers[0].name}</h3>
+                <p>{teamMembers[0].role}</p>
               </div>
-            ))}
-            {/* <div className="flex flex-wrap justify-center gap-4 mt-4">
+              <div className="bg-yellow-500 text-white p-4 rounded-lg w-64 text-center">
+                <h3 className="font-bold">{teamMembers[1].name}</h3>
+                <p>{teamMembers[1].role}</p>
+              </div>
+              <div className="flex space-x-4">
+                <div className="bg-yellow-500 text-white p-4 rounded-lg w-64 text-center">
+                  <h3 className="font-bold">{teamMembers[2].name}</h3>
+                  <p>{teamMembers[2].role}</p>
+                </div>
+                <div className="bg-yellow-500 text-white p-4 rounded-lg w-64 text-center">
+                  <h3 className="font-bold">{teamMembers[3].name}</h3>
+                  <p>{teamMembers[3].role}</p>
+                </div>
+              </div>
+              <div className="flex space-x-4">
+                <div className="bg-yellow-500 text-white p-4 rounded-lg w-64 text-center">
+                  <h3 className="font-bold">{teamMembers[4].name}</h3>
+                  <p>{teamMembers[4].role}</p>
+                </div>
+                <div className="bg-yellow-500 text-white p-4 rounded-lg w-64 text-center">
+                  <h3 className="font-bold">{teamMembers[5].name}</h3>
+                  <p>{teamMembers[5].role}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="flex flex-wrap justify-center gap-4 mt-4">
               {Array(5)
                 .fill("User Developer")
                 .map((role, index) => (
@@ -142,7 +170,6 @@ export default function AboutUs() {
                   </div>
                 ))}
             </div> */}
-          </div>
         </section>
       </main>
       {/* <footer className="bg-gray-100 dark:bg-gray-800 py-6">
