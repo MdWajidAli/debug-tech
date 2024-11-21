@@ -5,7 +5,7 @@ import Link from "next/link";
 // import { useTheme } from "next-themes";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -94,7 +94,7 @@ export default function Services() {
           ))}
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -107,7 +107,7 @@ export default function Services() {
             Scroll to learn more
             <ChevronDown className="ml-2 h-5 w-5 animate-bounce" />
           </Link>
-        </motion.div>
+        </motion.div> */}
       </main>
 
       {/* <footer id="footer" className="bg-white dark:bg-gray-800 py-12">
