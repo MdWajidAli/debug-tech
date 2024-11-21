@@ -5,7 +5,7 @@ import Link from "next/link";
 // import { useTheme } from "next-themes";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
 
