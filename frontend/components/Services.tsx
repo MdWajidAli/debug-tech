@@ -6,8 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
-// import Header from "./Header";
-// import Footer from "./Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const services = [
   {
@@ -42,7 +42,7 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
-      {/* <Header /> */}
+      <Header />
       <main className="container mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -126,7 +126,7 @@ export default function Services() {
           </p>
         </div>
       </footer> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
