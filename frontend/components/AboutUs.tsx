@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 // import { useTheme } from "next-themes";
 import Image from "next/image";
+import Header from "./Header";
+import Footer from "./Footer";
 // import Link from "next/link";
 // import {
 //   CheckCircle,
@@ -26,6 +28,7 @@ export default function AboutUs() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <Header />
       <main className="container mx-auto px-4 py-12">
         <section className="mb-16">
           <h1 className="text-4xl font-bold mb-8">About Us</h1>
@@ -142,11 +145,12 @@ export default function AboutUs() {
           </div>
         </section>
       </main>
-      <footer className="bg-gray-100 dark:bg-gray-800 py-6">
+      {/* <footer className="bg-gray-100 dark:bg-gray-800 py-6">
         <div className="container mx-auto px-4 text-center text-sm text-gray-600 dark:text-gray-400">
           &copy; 2024 DEBUG-TECH. All rights reserved.
         </div>
-      </footer>
+      </footer> */}
+      <Footer />
     </div>
   );
 }

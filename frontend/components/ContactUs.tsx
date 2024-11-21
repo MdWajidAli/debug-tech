@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 // import { useTheme } from "next-themes";
 import Image from "next/image";
 import { Facebook, Twitter, Youtube, Instagram } from "lucide-react";
+// import Header from "./Header";
+// import Footer from "./Footer";
 
 export default function ContactUs() {
   const [mounted, setMounted] = useState(false);
@@ -17,6 +19,7 @@ export default function ContactUs() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      {/* <Header /> */}
       <main className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
@@ -125,6 +128,7 @@ export default function ContactUs() {
           </div>
         </div>
       </main>
+      {/* <Footer /> */}
     </div>
   );
 }
