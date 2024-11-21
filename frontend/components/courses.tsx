@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ChevronDown,
   ChevronUp,
@@ -153,7 +154,12 @@ export default function CoursesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300"
+    >
       {/* <Link
         href="/"
         className="inline-flex items-center text-yellow-600 dark:text-yellow-400 hover:underline transition-colors my-8 "
@@ -169,7 +175,7 @@ export default function CoursesPage() {
         <FAQsSection faqs={faqs} openFAQs={openFAQs} toggleFAQ={toggleFAQ} />
       </main>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
