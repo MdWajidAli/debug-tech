@@ -4,13 +4,15 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  ChevronLeft,
+  // ChevronLeft,
   // CheckCircle,
   Clock,
   Calendar,
   Users,
   Code,
 } from "lucide-react";
+// import Header from "../Header";
+// import Footer from "../Footer";
 
 type Module = {
   title: string;
@@ -69,7 +71,8 @@ export default function PythonCourse() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-      <header className="bg-gray-100 dark:bg-gray-800 shadow-md">
+      {/* <Header /> */}
+      {/* <header className="bg-gray-100 dark:bg-gray-800 shadow-md">
         <div className="container mx-auto px-4 py-6 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-yellow-500 rounded-full"></div>
@@ -82,7 +85,7 @@ export default function PythonCourse() {
             </Link>
           </nav>
         </div>
-      </header>
+      </header> */}
 
       <main className="container mx-auto px-4 py-12">
         <div className="flex justify-between items-center">
@@ -257,6 +260,7 @@ export default function PythonCourse() {
           </Link>
         </div>
       </main>
+      {/* <Footer /> */}
     </div>
   );
 }

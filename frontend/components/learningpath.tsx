@@ -14,8 +14,8 @@ import {
   LucideIcon
   // ArrowLeft
 } from "lucide-react";
-import Header from "./Header";
-import Footer from "./Footer";
+// import Header from "./Header";
+// import Footer from "./Footer";
 
 interface LearningPath {
   title: string;
@@ -85,7 +85,7 @@ export default function LearningPaths() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
-      <Header />
+      {/* <Header /> */}
       <div className="container mx-auto px-4 py-16">
         {/* <Link
           href="/"
@@ -154,7 +154,7 @@ export default function LearningPaths() {
           ))}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

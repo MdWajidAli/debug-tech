@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 // import Image from "next/image";
 import {
-  ArrowLeft,
+  // ArrowLeft,
   ChevronDown,
   ChevronUp,
   BookOpen,
@@ -13,6 +13,8 @@ import {
   DollarSign,
 } from "lucide-react";
 import { motion } from "framer-motion";
+// import Header from "./Header";
+// import Footer from "./Footer";
 
 export default function InternshipsPage() {
   const [openFAQs, setOpenFAQs] = useState<number[]>([]);
@@ -50,14 +52,15 @@ export default function InternshipsPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      {/* <Header /> */}
       <div className="container mx-auto px-4 py-8">
-        <Link
+        {/* <Link
           href="/"
           className="inline-flex items-center text-yellow-600 dark:text-yellow-400 hover:underline mb-6 transition-colors duration-300"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Home
-        </Link>
+        </Link> */}
         <motion.h1
           className="text-4xl md:text-5xl font-bold mb-8 text-center"
           initial={{ opacity: 0, y: -20 }}
@@ -278,6 +281,7 @@ export default function InternshipsPage() {
           </div>
         </motion.section>
       </div>
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -6,6 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
+// import Header from "./Header";
+// import Footer from "./Footer";
 
 const services = [
   {
@@ -40,6 +42,7 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+      {/* <Header /> */}
       <main className="container mx-auto px-4 py-16">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -107,7 +110,7 @@ export default function Services() {
         </motion.div>
       </main>
 
-      <footer id="footer" className="bg-white dark:bg-gray-800 py-12">
+      {/* <footer id="footer" className="bg-white dark:bg-gray-800 py-12">
         <div className="container mx-auto px-4 text-center">
           <p className="text-xl font-semibold mb-4">
             Ready to transform your business?
@@ -122,7 +125,8 @@ export default function Services() {
             &copy; 2024 DEBUG-TECH. All rights reserved.
           </p>
         </div>
-      </footer>
+      </footer> */}
+      {/* <Footer /> */}
     </div>
   );
 }
