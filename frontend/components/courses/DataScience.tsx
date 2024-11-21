@@ -12,8 +12,8 @@ import {
   // Database,
   // Brain,
 } from "lucide-react";
-// import Header from "../Header";
-// import Footer from "../Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 
 export default function DataScienceCourse() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -35,7 +35,7 @@ export default function DataScienceCourse() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-      {/* <Header /> */}
+      <Header />
       {/* <header className="bg-gray-100 dark:bg-gray-800 shadow-md">
         <div className="container mx-auto px-4 py-6 flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-2">
@@ -286,7 +286,7 @@ export default function DataScienceCourse() {
           &copy; 2024 DEBUG-TECH. All rights reserved.
         </div>
       </footer> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

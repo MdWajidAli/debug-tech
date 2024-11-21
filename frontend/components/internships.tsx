@@ -13,8 +13,8 @@ import {
   DollarSign,
 } from "lucide-react";
 import { motion } from "framer-motion";
-// import Header from "./Header";
-// import Footer from "./Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function InternshipsPage() {
   const [openFAQs, setOpenFAQs] = useState<number[]>([]);
@@ -52,7 +52,7 @@ export default function InternshipsPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-      {/* <Header /> */}
+      <Header />
       <div className="container mx-auto px-4 py-8">
         {/* <Link
           href="/"
@@ -281,7 +281,7 @@ export default function InternshipsPage() {
           </div>
         </motion.section>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
