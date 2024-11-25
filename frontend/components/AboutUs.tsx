@@ -119,7 +119,6 @@ export default function AboutUs() {
         </section>
 
         <section className="mb-16">
-          
           <div className="min-h-screen bg-gray-900 text-white py-16">
             <h2 className="text-3xl font-bold text-center mb-12">
               Meet Our Team of DebugTech
